@@ -6,7 +6,6 @@ const countrySchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
-  // Other country-related fields if needed
 });
 
 const Country = mongoose.model('Country', countrySchema);

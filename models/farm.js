@@ -15,8 +15,8 @@ const farmSchema = new mongoose.Schema({
     required: true,
   },
   farmer_phone_number: {
-    type: String, // Reference to the phone_number field in the farmer model
-    ref: 'Farmer', // Reference to the Farmer model
+    type: String, 
+    ref: 'Farmer', 
     required: true,
   },
   farm_number: {
@@ -24,7 +24,7 @@ const farmSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
-  // Other farm-related fields if needed
+  
 });
 
 const Farm = mongoose.model('Farm', farmSchema);

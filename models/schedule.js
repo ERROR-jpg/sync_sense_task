@@ -19,12 +19,11 @@ const scheduleSchema = new mongoose.Schema({
     required: true,
   },
   farm_number: {
-    type: String, // Use String type for farm_number
-    ref: 'Farm', // Reference to the Farm model
+    type: String, 
+    ref: 'Farm', 
     required: true,
   },
   
-  // Other schedule-related fields if needed
 });
 
 const Schedule = mongoose.model('Schedule', scheduleSchema);
